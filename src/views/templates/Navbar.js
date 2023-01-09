@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 //import NotFound from "./NotFound";
 import Pen from "../Pen/Pen";
-import Dashboard from "../Dashboard/Dashboard";
+import Dashboard from "../Dashboard";
 import Login from "../Auth/Login";
 import DataApbn from "../APBN/DataApbn";
 
@@ -12,8 +12,7 @@ var Navbar = () => {
       <div className="container-fluid">
         <nav
           className="navbar navbar-expand-lg navbar-light bg-success fixed-top"
-          style={{ height: 45 }}
-        >
+          style={{ height: 45 }}>
           <Link to="/" className="navbar-brand mx-3 text-white">
             Sintesa v3 (beta)
           </Link>
@@ -24,8 +23,7 @@ var Navbar = () => {
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
@@ -34,8 +32,7 @@ var Navbar = () => {
                 <Link
                   as={Link}
                   to="/Dashboard"
-                  className="nav-item nav-link text-white"
-                >
+                  className="nav-item nav-link text-white">
                   Dashboard
                 </Link>
               </li>
@@ -56,28 +53,24 @@ var Navbar = () => {
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                  aria-expanded="false">
                   Data
                 </a>
 
                 <ul
                   className="dropdown-menu bg-success"
-                  aria-labelledby="navbarDropdown"
-                >
+                  aria-labelledby="navbarDropdown">
                   <li>
                     <Link
                       to="/Inquiry/"
-                      className="nav-item nav-link text-white"
-                    >
+                      className="nav-item nav-link text-white">
                       Inquiry
                     </Link>
                   </li>
                   <li>
                     <Link
                       to="/Weekly/"
-                      className="nav-item nav-link text-white"
-                    >
+                      className="nav-item nav-link text-white">
                       Weekly Report
                     </Link>
                   </li>
@@ -97,15 +90,13 @@ var Navbar = () => {
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                  aria-expanded="false">
                   Tematik
                 </a>
 
                 <ul
                   className="dropdown-menu bg-success"
-                  aria-labelledby="navbarDropdown"
-                >
+                  aria-labelledby="navbarDropdown">
                   <li>
                     <Link to="/Pen/" className="nav-item nav-link text-white">
                       Data PEN
@@ -122,8 +113,7 @@ var Navbar = () => {
                   <li>
                     <Link
                       to="/DanaDesa/"
-                      className="nav-item nav-link text-white"
-                    >
+                      className="nav-item nav-link text-white">
                       Dana Desa
                     </Link>
                   </li>
